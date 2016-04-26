@@ -90,24 +90,24 @@ extern int script_parser_init_early(void);
  ************************************************************************
  * May be supplied by boards if desired
  */
-inline void __coloured_LED_init(void) {}
+__attribute__((inline)) void __coloured_LED_init(void) {}
 void coloured_LED_init(void)
 	__attribute__((weak, alias("__coloured_LED_init")));
-inline void __red_LED_on(void) {}
+__attribute__((inline)) void __red_LED_on(void) {}
 void red_LED_on(void) __attribute__((weak, alias("__red_LED_on")));
-inline void __red_LED_off(void) {}
+__attribute__((inline)) void __red_LED_off(void) {}
 void red_LED_off(void) __attribute__((weak, alias("__red_LED_off")));
-inline void __green_LED_on(void) {}
+__attribute__((inline)) void __green_LED_on(void) {}
 void green_LED_on(void) __attribute__((weak, alias("__green_LED_on")));
-inline void __green_LED_off(void) {}
+__attribute__((inline)) void __green_LED_off(void) {}
 void green_LED_off(void) __attribute__((weak, alias("__green_LED_off")));
-inline void __yellow_LED_on(void) {}
+__attribute__((inline)) void __yellow_LED_on(void) {}
 void yellow_LED_on(void) __attribute__((weak, alias("__yellow_LED_on")));
-inline void __yellow_LED_off(void) {}
+__attribute__((inline)) void __yellow_LED_off(void) {}
 void yellow_LED_off(void) __attribute__((weak, alias("__yellow_LED_off")));
-inline void __blue_LED_on(void) {}
+__attribute__((inline)) void __blue_LED_on(void) {}
 void blue_LED_on(void) __attribute__((weak, alias("__blue_LED_on")));
-inline void __blue_LED_off(void) {}
+__attribute__((inline)) void __blue_LED_off(void) {}
 void blue_LED_off(void) __attribute__((weak, alias("__blue_LED_off")));
 /*
  ************************************************************************
